@@ -1,0 +1,22 @@
+.create-user-form {
+  padding: 30%;
+  background: rgba(0,0,0, .6);
+  height: 88vh;
+  input {
+    height: 30px;
+    border: 2px solid #ecf0f1;
+  }
+  button {
+    height: 30px;
+    border: 2px solid #3498db;
+    background: #3498db;
+    color: white;
+    font-size: 16px
+  }
+}
+
+.bg-image {
+  position: absolute;
+  height: 88vh;
+  width: 100vw;
+}

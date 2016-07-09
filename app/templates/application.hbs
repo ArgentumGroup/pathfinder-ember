@@ -4,28 +4,11 @@
 
 <div class='inner-body'>
   {{#unless session.isAuthenticated}}
-    <container>
-      <vbox  class='unauthenticated-landing'>
-        <hbox>
-          <box align='center'>
-            <h4>
-              Login
-            </h4>
-            {{login-form}}
-          </box>
-        </hbox>
-        <hbox>
-          <box align='center'>
-            <h4>
-              Create an account!
-            </h4>
-            {{create-user-form}}
-          </box>
-        </hbox>
-      </vbox>
-    </container>
-    {{else}}
-      {{outlet}}
+    <box>
+      {{create-user-form}}
+    </box>
+  {{else}}
+    {{outlet}}
   {{/unless}}
 </div>
 

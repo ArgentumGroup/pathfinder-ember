@@ -1,19 +1,37 @@
-<div id="userForm">
-  {{input
-    value=email
-    placeholder="email"
-    class="username-field"}}
-  {{input
-    type="password"
-    placeholder="password"
-    value=password
-    class="password-field"}}
-  {{input
-    type="password"
-    placeholder="confirm-password"
-    value=password-confirmation
-    class="password-field"}}
-  <a href="/createAccount" {{action "createAccount"}}>
-    Create Account
-  </a>
-</div>
+<img class='bg-image' src='/images/pathfinder.jpg'>
+
+<vbox class='create-user-form'>
+  <hbox>
+    <box>
+      {{input
+        value=email
+        placeholder="email"
+        class="username-field"}}
+    </box>
+  </hbox>
+  <hbox>
+    <box>
+      {{input
+        type="password"
+        placeholder="password"
+        value=password
+        class="password-field"}}
+    </box>
+  </hbox>
+  <hbox>
+    <box>
+      {{input
+        type="password"
+        placeholder="confirm-password"
+        value=password-confirmation
+        class="password-field"}}
+    </box>
+  </hbox>
+  <hbox>
+    <box>
+      <button {{action "createAccount"}}>
+        Create Account
+      </button>
+    </box>
+  </hbox>
+</vbox>
