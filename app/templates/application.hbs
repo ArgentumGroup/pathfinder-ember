@@ -3,10 +3,10 @@
 </header>
 
 <div class='inner-body'>
-  {{#unless session.isAuthenticated}}
+  <!-- {{#unless session.isAuthenticated}}
     <container>
-      <vbox  class='unauthenticated-landing'>  <!-- grid container -->
-        <hbox>  <!-- row container -->
+      <vbox  class='unauthenticated-landing'>
+        <hbox>
           <box align='center'>
             <h4>
               Login
@@ -14,7 +14,7 @@
             {{login-form}}
           </box>
         </hbox>
-        <hbox>  <!-- row container -->
+        <hbox>
           <box align='center'>
             <h4>
               Create an account!
@@ -26,7 +26,9 @@
     </container>
     {{else}}
       {{outlet}}
-  {{/unless}}
+  {{/unless}} -->
+  {{outlet}}
+
 </div>
 
 <footer>

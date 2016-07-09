@@ -3,16 +3,21 @@ footer {
   min-height: 50px;
   line-height: 6vh;
   background: black;
-  a:link {
-      color: white;
+  button {
+    height: 6vh;
+    width: 100%;
+    color: #ecf0f1;
   }
-  a:visited {
-      color: white;
+  .green {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
   }
-  a:hover {
-      color: white;
+  .purple {
+    background-color: #9b59b6;
+    border-color: #9b59b6;
   }
-  a:active {
-      color: white;
+  .red {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
   }
 }
