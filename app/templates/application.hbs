@@ -3,7 +3,7 @@
 </header>
 
 <div class='inner-body'>
-  <!-- {{#unless session.isAuthenticated}}
+  {{#unless session.isAuthenticated}}
     <container>
       <vbox  class='unauthenticated-landing'>
         <hbox>
@@ -26,9 +26,7 @@
     </container>
     {{else}}
       {{outlet}}
-  {{/unless}} -->
-  {{outlet}}
-
+  {{/unless}}
 </div>
 
 <footer>
