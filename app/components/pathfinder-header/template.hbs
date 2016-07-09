@@ -1,0 +1,30 @@
+<hbox>
+  <box sm='2' md='2' lg='2' class='header__left' horizontal>
+    {{#link-to}}
+      <img src='images/pathfinder_logo.png'>
+    {{/link-to}}
+  </box>
+  <box sm='10' md='10' lg='10' class='header__right' horizontal justify='end'>
+    {{#link-to}}
+      Ur
+    {{/link-to}}
+
+    {{#link-to}}
+      Characters
+    {{/link-to}}
+
+    {{#link-to}}
+      Quick Reference
+    {{/link-to}}
+
+    {{#unless session.isAuthenticated}}
+      {{login-form}}
+    {{else}}
+      <a href="/logout"
+         class="logoutBtn"
+         {{action "signout"}}>
+        logout
+      </a>
+    {{/unless}}
+  </box>
+</hbox>

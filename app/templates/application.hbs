@@ -1,9 +1,11 @@
-{{#unless session.isAuthenticated}}
-  {{login-form}}
-{{else}}
-  <a href="/logout"
-     class="logoutBtn"
-     {{action "signout"}}>
-    logout
-  </a>
-{{/unless}}
+<header>
+  {{pathfinder-header}}
+</header>
+
+<div class='inner-body'>
+  {{outlet}}
+</div>
+
+<footer>
+  {{pathfinder-footer}}
+</footer>
