@@ -5,18 +5,6 @@
     {{/link-to}}
   </box>
   <box sm='10' md='10' lg='10' class='header__right' horizontal justify='end'>
-    {{#link-to}}
-      Ur
-    {{/link-to}}
-
-    {{#link-to}}
-      Characters
-    {{/link-to}}
-
-    {{#link-to}}
-      Quick Reference
-    {{/link-to}}
-
     {{#unless session.isAuthenticated}}
       {{login-form}}
     {{else}}

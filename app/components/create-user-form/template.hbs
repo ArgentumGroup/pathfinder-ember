@@ -1,0 +1,19 @@
+<div id="userForm">
+  {{input
+    value=email
+    placeholder="email"
+    class="username-field"}}
+  {{input
+    type="password"
+    placeholder="password"
+    value=password
+    class="password-field"}}
+  {{input
+    type="password"
+    placeholder="confirm-password"
+    value=password-confirmation
+    class="password-field"}}
+  <a href="/createAccount" {{action "createAccount"}}>
+    Create Account
+  </a>
+</div>

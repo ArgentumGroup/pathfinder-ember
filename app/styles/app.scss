@@ -1,5 +1,18 @@
 body {
   margin: 0;
+  .inner-body {
+    height: 88vh;
+    overflow: scroll;
+  }
 }
 
-@import 'pathfinder-header'
+.unauthenticated-landing {
+  padding-top: 3em;
+}
+
+* {
+font-family: 'Roboto', sans-serif;
+}
+
+@import 'pathfinder-footer';
+@import 'pathfinder-header';
