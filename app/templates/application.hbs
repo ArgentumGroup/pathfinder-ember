@@ -1,0 +1,9 @@
+{{#unless session.isAuthenticated}}
+  {{login-form}}
+{{else}}
+  <a href="/logout"
+     class="logoutBtn"
+     {{action "signout"}}>
+    logout
+  </a>
+{{/unless}}

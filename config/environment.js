@@ -6,6 +6,7 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    apiHost: 'http://localhost:3000',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -20,11 +21,12 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
-    // ENV.APP.LOG_RESOLVER = true;
-    // ENV.APP.LOG_ACTIVE_GENERATION = true;
-    // ENV.APP.LOG_TRANSITIONS = true;
-    // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
-    // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV['simple-auth'] = {
+      store: 'simple-auth-session-store:local-storage',
+      authorizer: 'authorizer:application',
+      crossOriginWhiteList: ['http://localhost:3000'],
+      routeAfterAuthentication: '/'
+    }
   }
 
   if (environment === 'test') {
