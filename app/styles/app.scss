@@ -23,17 +23,20 @@ font-family: 'Roboto', sans-serif;
     background-color: #9b59b6;
   }
   button {
-    width: 100%;
-    padding: 1em 0;
-    color: #f1c40f;
-    font-weight: bold;
-    font-size: 18px;
-    border: none;
-    background: none;
-
+    width: 30%;
+    padding: .75em 0;
+    color: white;
+    font-size: 14px;
+    background-color: #9b59b6;
+    border-color: #9b59b6;
   }
 }
 
+@media (max-width: 768px) {
+  .toggle-switch {
+    padding: 0 5% 0 5%;
+  }
+}
 @import 'create-user-form';
 @import 'login-form';
 @import 'pathfinder-footer';

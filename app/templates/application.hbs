@@ -9,14 +9,14 @@
       <hbox>
         <box align='center'>
           {{#if formToggle}}
-            <h2>
+            <h3>
               Login
-            </h2>
+            </h3>
             {{login-form}}
           {{else}}
-            <h2>
+            <h3>
               Create a new account
-            </h2>
+            </h3>
             {{create-user-form}}
           {{/if}}
         </box>
@@ -24,22 +24,22 @@
       <hbox class='toggle-switch'>
         <box align='center'>
           {{#if formToggle}}
-            <h2>
+            <h5>
               Need a new account?
-            </h2>
-            <h2>
+            </h5>
+            <h5>
               {{fa-icon "arrow-down"}}
-            </h2>
+            </h5>
             <button {{action 'toggleForm'}}>
               click me
             </button>
           {{else}}
-            <h2>
+            <h5>
               Already have an account?
-            </h2>
-            <h2>
+            </h5>
+            <h5>
               {{fa-icon "arrow-down"}}
-            </h2>
+            </h5>
             <button {{action 'toggleForm'}}>
               click me
             </button>
