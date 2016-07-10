@@ -5,14 +5,12 @@
     {{/link-to}}
   </box>
   <box sm='10' md='10' lg='10' class='header__right' horizontal justify='end'>
-    {{#unless session.isAuthenticated}}
-      {{login-form}}
-    {{else}}
+    {{#if session.isAuthenticated}}
       <a href="/logout"
          class="logoutBtn"
          {{action "signout"}}>
         logout
       </a>
-    {{/unless}}
+    {{/if}}
   </box>
 </hbox>

@@ -3,10 +3,50 @@
 </header>
 
 <div class='inner-body'>
+  <img class='bg-image' src='/images/pathfinder.jpg'>
   {{#unless session.isAuthenticated}}
-    <box>
-      {{create-user-form}}
-    </box>
+    <vbox>
+      <hbox>
+        <box align='center'>
+          {{#if formToggle}}
+            <h2>
+              Login
+            </h2>
+            {{login-form}}
+          {{else}}
+            <h2>
+              Create a new account
+            </h2>
+            {{create-user-form}}
+          {{/if}}
+        </box>
+      </hbox>
+      <hbox class='toggle-switch'>
+        <box align='center'>
+          {{#if formToggle}}
+            <h2>
+              Need a new account?
+            </h2>
+            <h2>
+              {{fa-icon "arrow-down"}}
+            </h2>
+            <button {{action 'toggleForm'}}>
+              click me
+            </button>
+          {{else}}
+            <h2>
+              Already have an account?
+            </h2>
+            <h2>
+              {{fa-icon "arrow-down"}}
+            </h2>
+            <button {{action 'toggleForm'}}>
+              click me
+            </button>
+          {{/if}}
+        </box>
+      </hbox>
+    </vbox>
   {{else}}
     {{outlet}}
   {{/unless}}

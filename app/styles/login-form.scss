@@ -1,4 +1,4 @@
-.create-user-form {
+.login-form {
   padding: 0 30% 0 30%;
   width: 100vw;
   input {
@@ -17,15 +17,8 @@
   }
 }
 
-.bg-image {
-  z-index: -9999;
-  position: absolute;
-  height: 88vh;
-  width: 100vw;
-}
-
 @media (max-width: 768px) {
-  .create-user-form {
+  .login-form {
     padding: 20% 10%;
   }
 }

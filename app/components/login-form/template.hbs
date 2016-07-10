@@ -1,20 +1,18 @@
-<div id="loginForm">
+<vbox class="login-form">
   {{#if loginError}}
     <div class="login-err alert alert-error">Bad deets dude.</div>
   {{/if}}
-
+  <br>
   {{input
     value=identification
-    placeholder="identification"
-    class="username-field"}}
-
+    placeholder="email"}}
+  <br>
   {{input
     type="password"
     placeholder="password"
-    value=password
-    class="password-field"}}
-
-  <a href="/login" {{action "login"}}>
-    Login
-  </a>
-</div>
+    value=password}}
+  <br>
+  <button {{action "login"}}>
+      Login
+  </button>
+</vbox>

@@ -1,8 +1,10 @@
 body {
   margin: 0;
   .inner-body {
+    color: white;
     height: 88vh;
     overflow: scroll;
+    background: rgba(0,0,0, .7);
   }
 }
 
@@ -14,6 +16,25 @@ body {
 font-family: 'Roboto', sans-serif;
 }
 
+.toggle-switch {
+  color: white;
+  padding: 0 30% 0 30%;
+  .toggled {
+    background-color: #9b59b6;
+  }
+  button {
+    width: 100%;
+    padding: 1em 0;
+    color: #f1c40f;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    background: none;
+
+  }
+}
+
 @import 'create-user-form';
+@import 'login-form';
 @import 'pathfinder-footer';
 @import 'pathfinder-header';
