@@ -7,7 +7,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('ur');
+  this.route('ur', function() {
+    this.route('cities');
+    this.route('pillars');
+  });
   this.route('characters');
   this.route('reference');
 });
