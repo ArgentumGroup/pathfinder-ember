@@ -11,15 +11,16 @@ let cities = [
   {
     name: "City of Air",
     location: "On top a mountain",
-    population: "320,000",
+    population: "420,000",
     dominantSpecies: "Elven",
-    majorExports: "Airships"
+    majorExports: "The most expensive and fanciful of things with origins in the City of Air are the glorious sky breaking Airships. Families of Noble blood or high-ranking merchant guilds will enter into a contract with an Air Elemental to power these ships of wonder. "
   },
   {
     name: "City of Earth",
     location: "America",
     population: "723,000",
-    dominantSpecies: "Dwarves"
+    dominantSpecies: "Dwarves",
+    majorExports: "Literally everything, central trade hub of Ur, it is said all roads lead to Earth."
   },
   {
     name: "City of Water",
@@ -33,11 +34,12 @@ let cities = [
     location: "South Pole",
     population: "124,000",
     dominantSpecies: "Aasimar",
-    majorExports: "Services"
+    majorExports: "Medical services, and research."
   },
   {
     name: "City of Devils",
     location: "North Pole",
+    population: "400,000",
     dominantSpecies: "Human and Tiefling",
     majorExports: "Financial Services and Insurance"
   }

@@ -1,5 +1,23 @@
 <box>
-  <a href="#" {{action 'showExtraInfo'}}>
-   <span class="city-title">{{city.name}}</span>
+  <a class="city-title text-white" href="#" {{action 'showExtraInfo'}}>
+   {{city.name}}
   </a>
 </box>
+{{#if showInfo}}
+<box>
+  <ul class="city-list">
+    <li>
+      {{city.location}}
+    </li>
+    <li>
+      {{city.population}}
+    </li>
+    <li>
+      {{city.dominantSpecies}}
+    </li>
+    <li>
+      {{city.majorExports}}
+    </li>
+  </ul>
+</box>
+{{/if}}

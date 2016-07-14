@@ -1,13 +1,14 @@
 .city-box {
-    a {
-      color: white;
-    }
   margin: 10px 2rem;
   padding: 1.5em 0;
-  border: 2px red solid;
+  border: 2px rgb(157, 187, 195) solid;
   background-color: darkslategrey;
 }
 
 .city-title {
   text-align: center;
+}
+
+.city-list {
+  padding-right: .5rem;
 }

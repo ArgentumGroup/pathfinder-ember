@@ -1,11 +1,17 @@
-<h2>
-    The Major Cities of the world of Ur.
-</h2>
+<box align="center">
+  <h1>
+    The Major Cities Ur
+  </h1>
+</box>
+<hbox align="center">
+  {{#each model as |city|}}
+  <box class="city-box" align='center' lg="3" md="4" sm="4" xs="10">
+    {{ur-city
+    city=city}}
+  </box>
+  {{/each}}
+</hbox>
 
-{{#each model as |city|}}
-  {{ur-city
-  city=city}}
-{{/each}}
 <!-- <vbox>
     <hbox align='center'>
       <box class='city-box' align='center' lg="3" md="3" sm="4">
