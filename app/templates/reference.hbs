@@ -1,1 +1,16 @@
-REFERENCE
+  <button>Skill Checks</button>
+  <button>Combat</button>
+
+<table>
+  <h3>Conditions</h3>
+  <tr>
+    <th>Condition</th>
+    <th>Description</th>
+  </tr>
+  {{#each model as |condition|}}
+    <tr>
+      <td>{{condition.condition}}</td>
+      <td>{{condition.description}}</td>
+    </tr>
+  {{/each}}
+</table>
