@@ -8,6 +8,10 @@ body {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
 .unauthenticated-landing {
   padding-top: 3em;
 }
@@ -32,6 +36,18 @@ font-family: 'Roboto', sans-serif;
   }
 }
 
+.banner-image {
+  margin: 1.5rem 0;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-left {
+  text-align: left;
+}
+
 @media (max-width: 768px) {
   .toggle-switch {
     padding: 0 5% 0 5%;
@@ -42,4 +58,4 @@ font-family: 'Roboto', sans-serif;
 @import 'pathfinder-footer';
 @import 'pathfinder-header';
 @import 'ur-city';
-
+@import 'ur-pillar';
