@@ -1,1 +1,13 @@
-{{outlet}}
+<box align="center">
+  <h1>
+    The six Bones of Ur
+  </h1>
+</box>
+<hbox align="center">
+  {{#each model as |pillar|}}
+  <box class="city-box" align='center' lg="3" md="4" sm="4" xs="10">
+    {{ur-pillar
+    pillar=pillar}}
+  </box>
+  {{/each}}
+</hbox>

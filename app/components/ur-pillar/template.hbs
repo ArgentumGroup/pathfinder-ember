@@ -1,0 +1,12 @@
+<box>
+  <a class="city-title text-white" href="#" {{action 'showExtraInfo'}}>
+    {{pillar.name}}
+  </a>
+</box>
+{{#if showInfo}}
+<box>
+  <p class="pillar-blurb">
+     This Bone has access to the {{pillar.accessiblePlanes}}.
+  </p>
+</box>
+{{/if}}
