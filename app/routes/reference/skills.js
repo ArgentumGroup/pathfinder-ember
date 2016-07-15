@@ -26,27 +26,27 @@ export default Ember.Route.extend({
   }
 });
 
-let acrobatics = [
+let acrobatics = [ {
   surfaces: [
     {
       sufaceWidth: "> 3 ft",
-      acrobaticsDC: 0,
+      acrobaticsDC: 0
     },
     {
       sufaceWidth: "1 - 3 ft",
-      acrobaticsDC: 5,
+      acrobaticsDC: 5
     },
     {
       sufaceWidth: "7 - 11 in",
-      acrobaticsDC: 10,
+      acrobaticsDC: 10
     },
     {
       sufaceWidth: "2 - 6 in",
-      acrobaticsDC: 15,
+      acrobaticsDC: 15
     },
     {
       sufaceWidth: "< 2 in",
-      acrobaticsDC: 20,
+      acrobaticsDC: 20
     }
   ],
   situations: [
@@ -103,7 +103,7 @@ let acrobatics = [
       DC: '+4 per ft'
     }
   ]
-];
+}];
 let bluff = [
   {
     circumstances: "Target wants to believe you",
@@ -134,7 +134,7 @@ let bluff = [
     bluffModifier: 10
   }
 ];
-let climb = [
+let climb = [ {
   DC: [
     {
       climb: 0,
@@ -168,7 +168,7 @@ let climb = [
       climb: '--',
       surface: "A perfectly smooth, flat, vertical (or inverted) surface cannot be climbed."
     }
-  ]
+  ],
   DCModifiers: [
     {
       climb: -10,
@@ -183,7 +183,7 @@ let climb = [
       surface: "Surface is slippery."
     }
   ]
-];
+}];
 let diplomacy = [
   {
     attitudes: [
