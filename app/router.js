@@ -12,7 +12,10 @@ Router.map(function() {
     this.route('pillars');
   });
   this.route('characters');
-  this.route('reference');
+  this.route('reference', function() {
+    this.route('skills');
+    this.route('combat');
+  });
 });
 
 export default Router;
