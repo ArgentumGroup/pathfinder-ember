@@ -9,8 +9,9 @@ let cities = [
     majorExports: "Advanced Technology"
   },
   {
-    name: "City of Air",
-    location: "On top a mountain",
+    name: "Pneumos",
+    description: "Noise, noise, noise. It didn’t matter which way one turned, Pneumos was awash with noise. Noisy traffic, noisy industry, street musicians, the cries of street-sellers and street collectors echoed through Pneumos. From morning till night, the costermongers could be heard crying their wares and music whether just the organ-grinder, or the full brass band seemed to surround one night and day. Traffic in Pneumos was extreme as much of the city was created long before written history. Streets were narrow and paved with cobblestones. In the streets horses and pedestrians mingled.",
+    location: "Pneumos was build into the elemental bone of air. For years the were simple traders but as time went on they developed a respect for the air elements that would drift up through the bone. ",
     population: "420,000",
     dominantSpecies: "Elven",
     majorExports: "The most expensive and fanciful of things with origins in the City of Air are the glorious sky breaking Airships. Families of Noble blood or high-ranking merchant guilds will enter into a contract with an Air Elemental to power these ships of wonder. "
